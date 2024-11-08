@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <link rel=" stylesheet" href="样式表.css" type=" text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测测你的工大结局</title>
+    <link rel="stylesheet" href="styles.css">
+    <scipt><link script src="script.js"></scipt>
+
+</head>
+<body>
+    <div id="quiz">
+        <h1>测测你的工大结局</h1>
+
+        <!-- 问题一 -->
+        <div id="question1">
+            <p>问题一：早八你的起床情况是？</p>
+            <button onclick="selectOption('question1', 1)">A. 每天都能早起准时上课</button>
+            <button onclick="selectOption('question1', 0)">B. 看情况，太困了就不起了</button>
+        </div>
+
+        <!-- 问题二 -->
+        <div id="question2" style="display:none;">
+            <p>问题二：你参加了很多学生组织吗？</p>
+            <button onclick="selectOption('question2', 1)">A. 是的</button>
+            <button onclick="selectOption('question2', 0)">B. 不是</button>
+        </div>
+
+        <!-- 结果显示 -->
+        <div id="result" style="display:none;">
+            <h2>你的测试结果是：</h2>
+            <p id="resultText"></p>
+            <button onclick="restartQuiz()">重新测试</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
